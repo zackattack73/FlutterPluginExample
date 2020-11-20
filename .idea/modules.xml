@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MinimalExampleInternationalization.iml" filepath="$PROJECT_DIR$/MinimalExampleInternationalization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/MinimalExampleInternationalization_android.iml" filepath="$PROJECT_DIR$/android/MinimalExampleInternationalization_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/MinimalExampleInternationalization_example_android.iml" filepath="$PROJECT_DIR$/example/android/MinimalExampleInternationalization_example_android.iml" />
+    </modules>
+  </component>
+</project>
