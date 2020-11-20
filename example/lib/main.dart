@@ -21,6 +21,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
+    translateTitle(context);
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -43,7 +44,7 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  translateTitle(BuildContext context) async {
+  void translateTitle(BuildContext context) async {
     String tempNewTitle = await MinimalExampleInternationalization.getTitle(context);
     setState(() {
       title = tempNewTitle;
