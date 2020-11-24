@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - MinimalExampleInternationalization (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - MinimalExampleInternationalization (from `.symlinks/plugins/MinimalExampleInternationalization/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  MinimalExampleInternationalization:
+    :path: ".symlinks/plugins/MinimalExampleInternationalization/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  MinimalExampleInternationalization: e534b47ed43bcc2b34eb4c3fc34972f58c9af7a6
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.9.1
