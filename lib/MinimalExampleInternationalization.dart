@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_gen/gen_l10n/translations.dart';
+import 'l10n/translations.dart';
 
 class MinimalExampleInternationalization {
   static const MethodChannel _channel = const MethodChannel('MinimalExampleInternationalization');

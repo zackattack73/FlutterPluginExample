@@ -3,9 +3,16 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:MinimalExampleInternationalization/MinimalExampleInternationalization.dart';
+import 'package:MinimalExampleInternationalization/l10n/translations.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MaterialApp(
+      localizationsDelegates: Translations.localizationsDelegates,
+      supportedLocales: Translations.supportedLocales,
+      home: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatefulWidget {
@@ -21,6 +28,11 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
     translateTitle(context);
   }
 
@@ -51,17 +63,14 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Center(
+        child: Text('Running on: $_platformVersion\n'),
       ),
     );
   }
